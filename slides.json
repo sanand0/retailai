@@ -1,0 +1,991 @@
+{
+  "slides": [
+    {
+      "title": "Chat-Commerce Assistant in yuu App Answers Questions and Builds Personalised Bundles",
+      "description": "LLM chatbot inside the yuu app lets shoppers type or speak queries like “Where’s oat-milk?” and instantly returns shelf location, bundle offers, and promo explanations—boosting conversion and basket size. Walmart’s ‘Text to Shop’ is a comparable example.",
+      "image_prompt": "Comic-style split scene: left panel shows a shopper holding a phone with the yuu app, speech bubble: “Where’s oat-milk?”; right panel shows the screen with a smiling AI avatar, aisle map, and highlighted breakfast bundle. Use bright arrows linking query to answer to emphasise instant AI help and upsell.",
+      "image": "0.webp",
+      "demos": [
+        "Smart Cart",
+        "API Agent",
+        "WhatsLLM"
+      ]
+    },
+    {
+      "title": "Receipt-to-Recipe Cross-Sell Engine Suggests Meals and Add-On Items After a Scan",
+      "description": "Customer scans a Giant receipt; an LLM proposes recipes and recommends Guardian vitamins or Cold Storage extras, nudging cross-banner sales—similar to Carrefour’s Cookit scan-to-cook feature.",
+      "image_prompt": "Vibrant comic frame: shopper points phone camera at a crumpled receipt; the screen pops up a colourful recipe card with extra ingredient icons and add-to-cart buttons. A lightbulb icon above the shopper shows new meal ideas.",
+      "image": "1.webp",
+      "demos": [
+        "Smart Cart",
+        "API Agent"
+      ]
+    },
+    {
+      "title": "Real-Time Bilingual Shelf-Talker Generator Prints Compliant Labels Instantly",
+      "description": "LLM converts supplier spreadsheets into English-Mandarin shelf labels in seconds, ensuring legal wording and faster planogram updates—echoing Tesco’s automated ticketing pilots.",
+      "image_prompt": "Comic panel: tablet connected to label printer spits out bilingual shelf tags; employee swaps plain tags for fresh ones while an AI hologram gives a thumbs-up. Motion lines show rapid printing.",
+      "image": "2.webp",
+      "demos": [
+        "Fashion AI",
+        "Poster Gen"
+      ]
+    },
+    {
+      "title": "Voice Copilot on SOPs for Store Staff via Handheld Devices",
+      "description": "Employees voice-query procedures—e.g. thawing seafood—and receive instant, policy-linked answers on handhelds, cutting training time and enforcing compliance. IKEA’s Hej Copilot is a precedent.",
+      "image_prompt": "Comic close-up: employee with headset and handheld asks, “How to thaw crab?”; AI avatar speech bubble lists steps next to a seafood counter, each step tick-marked for compliance.",
+      "image": "3.webp",
+      "demos": [
+        "Policy Search",
+        "IT Chat"
+      ]
+    },
+    {
+      "title": "Natural-Language What-If Supply-Chain Planner Handles Demand Shocks in Seconds",
+      "description": "Planners ask scenarios like “Stock needs if haze index 150?” and get demand, waste, and cost projections from Dingdong forecasts plus weather data—mirroring Kroger’s AI scenario tools.",
+      "image_prompt": "Comic frame: analyst at desk types question into a large screen; floating charts morph to show demand curves and veggie icons. Cloud-shaped thought bubble depicts a hazy skyline, linking external shock to data.",
+      "image": "4.webp",
+      "demos": [
+        "HypoForge",
+        "DataChat v2",
+        "API Agent"
+      ]
+    },
+    {
+      "title": "Carbon-Aware Delivery Routing Optimiser Cuts CO₂ and Logistics Costs Simultaneously",
+      "description": "AI models pick delivery routes that balance cost, cold-chain integrity, and carbon footprint, surfacing greener options—akin to UPS ORION’s emissions logic.",
+      "image_prompt": "Dynamic comic map: two routes—one long & red (high CO₂), one short & green (low CO₂). AI drone icon directs trucks onto the green path; emission numbers shrink beside the green route.",
+      "image": "5.webp",
+      "demos": [
+        "HypoForge"
+      ]
+    },
+    {
+      "title": "Generative Marketing Copy Factory Produces Flyers, Banners, and Messages from One Brief",
+      "description": "GenAI turns a single creative brief into flyer text, app banners, and WhatsApp blasts, routed through Straive’s LLM Foundry for brand-safety—cutting campaign cycles by 30-50 %. Coca-Cola’s generative ads prove the model.",
+      "image_prompt": "Comic montage: central brief document feeds three conveyor belts, ending in a colourful poster, a phone banner, and a chat bubble. AI robot stamps “Approved” on outputs, showing speed and consistency.",
+      "image": "6.webp",
+      "demos": [
+        "Poster Gen",
+        "PosterGen",
+        "Fashion AI"
+      ]
+    },
+    {
+      "title": "Two-Week AI Literacy Sprint Gamifies Prompt Craft and ROI Measurement for Employees",
+      "description": "Bootcamp uses Straive’s evaluation sandbox; staff build prompts, test models, and compete on ROI metrics—mirroring Walmart’s large-scale GenAI upskilling.",
+      "image_prompt": "Comic classroom: diverse staff at laptops with floating prompt cards; coach AI avatar points to a big timer labelled “14-Day Sprint”. Progress bar fills as lightbulbs pop over participants.",
+      "image": "7.webp",
+      "demos": [
+        "Prompt Evals",
+        "LLM Foundry",
+        "LLM Model Picker"
+      ]
+    },
+    {
+      "title": "In-Store AI Copilot on Tablet Guides Shelf-Stackers to Optimise Merchandising in Real Time",
+      "description": "Tablet-based AI assistant suggests perfect shelf placement, flags gaps, and answers product questions, improving planogram compliance. Lindex’s store copilot offers a precedent.",
+      "image_prompt": "Bright comic panel: shelf-stacker holds a tablet showing a holographic AI overlay with arrows pointing to optimal shelf spots. Products shine where placed correctly; the worker smiles confidently.",
+      "image": "8.webp",
+      "demos": [
+        "Image Explore",
+        "API Agent"
+      ]
+    },
+    {
+      "title": "Computer Vision Shelf Monitoring System Alerts Replenishment and Planogram Compliance",
+      "description": "Edge cameras and ML detect empty spots and misplacements, pushing alerts to staff devices—adopted by Kroger and Ahold in the US.",
+      "image_prompt": "Comic view from ceiling camera: software heat-map highlights empty spaces. Nearby tablet pops a red alert icon to a surprised employee, who dashes toward the shelf with a box of goods.",
+      "image": "9.webp",
+      "demos": [
+        "Image Extract",
+        "Image Explore",
+        "Driver Profile ID"
+      ]
+    },
+    {
+      "title": "AI Wellness Kiosk with AR Provides Instant Health Checks and Product Advice in Guardian Stores",
+      "description": "Kiosk scans face or palm, predicts vitals with clinical accuracy, and an LLM suggests supplements or skincare—expanding Mannings HK’s AI Wellness Scan to Singapore.",
+      "image_prompt": "Comic pharmacy scene: customer peers into a sleek kiosk; AR overlay shows heartbeat icon and vitamin suggestions. Friendly AI avatar floats beside, offering advice.",
+      "image": "10.webp",
+      "demos": [
+        "Hip Surgery Videos",
+        "Patient Pulse"
+      ]
+    },
+    {
+      "title": "AI Demand Forecasting and Replenishment Engine Prevents Fresh-Food Stockouts",
+      "description": "ML combines sales, weather, and holiday data to predict daily demand for perishables, reducing waste and lost sales—extending the Dingdong pilot.",
+      "image_prompt": "Comic warehouse chart: line graph of forecasted vs. actual demand overlaid on crates of produce; AI robot adjusts order quantities with a slider, preventing empty crates.",
+      "image": "11.webp",
+      "demos": [
+        "HypoForge",
+        "DataChat v2"
+      ]
+    },
+    {
+      "title": "QR-Code Product Traceability Platform Shows Farm-to-Shelf Journey and Safety Data",
+      "description": "Each item gets a unique code linking origin, cold-chain, and inspection data; customers scan to verify freshness—similar to Carrefour China’s blockchain pork traceability.",
+      "image_prompt": "Comic: shopper scans QR code on mango; phone displays animated farm-to-store timeline with green checkmarks. Behind, farmer and delivery truck icons wave.",
+      "image": "12.webp",
+      "demos": [
+        "API Agent"
+      ]
+    },
+    {
+      "title": "Dynamic Pricing Algorithm Adjusts Shelf Prices in Real Time by Demand and Competition",
+      "description": "LLM-backed engine ingests sales velocity, competitor scraping, and inventory to set smart discounts, lifting margin and sell-through; Amazon and REWE test similar.",
+      "image_prompt": "Comic shelf edge with digital price labels changing from 3.50 → 3.30; AI cloud icon crunches graphs overhead. Shopper smiles at the timely discount.",
+      "image": "13.webp",
+      "demos": [
+        "Competitor Price and Assortment tracking"
+      ]
+    },
+    {
+      "title": "Personalised Promotion Generator Crafts Coupons and Bundles for Loyalty Members Automatically",
+      "description": "LLM analyses yuu purchase history to push hyper-personal vouchers via app and email, raising redemption rates; Target’s Roundel uses comparable AI.",
+      "image_prompt": "Comic mobile screen: golden ticket coupon pops up with user’s name and tailored bundle. Confetti bursts while AI avatar high-fives the shopper.",
+      "image": "14.webp",
+      "demos": [
+        "Smart Cart",
+        "Customer Sentiment Chatbot"
+      ]
+    },
+    {
+      "title": "Real-Time Product Recommendation Engine Suggests Complementary Items Online and In-App",
+      "description": "Embedding-based recommender surfaces “Customers also buy…” suggestions personalised to each session, increasing average order value; Amazon pioneered this.",
+      "image_prompt": "Comic e-commerce page: product image at centre; sidebar pops recommended items with glowing outline. Arrows show upward basket total.",
+      "image": "15.webp",
+      "demos": [
+        "Smart Cart",
+        "Topic Analysis"
+      ]
+    },
+    {
+      "title": "LLM Customer Service Chatbot Handles Inquiries 24 × 7 Across Web, App, and WhatsApp",
+      "description": "Chatbot resolves order tracking, returns, and product questions, automating >60 % of tickets—mirroring Carrefour and Decathlon deployments.",
+      "image_prompt": "Comic messaging chat: customer asks “Where’s my order?”; AI bot replies with tracking map and ETA. Night-time window behind indicates 24/7 service.",
+      "image": "16.webp",
+      "demos": [
+        "Inquiry Response",
+        "Chat Assist",
+        "VoiceLLM"
+      ]
+    },
+    {
+      "title": "AI Email and Chat Triage Routes Customer Messages to Correct Teams Automatically",
+      "description": "Model classifies intent, extracts order IDs, and forwards to billing, delivery, or store—cutting response time by 40 %. Similar to Zendesk AI add-ons.",
+      "image_prompt": "Comic inbox: emails funnel through an AI filter into colour-coded buckets (billing, delivery, feedback). Stopwatch icon shows saved time.",
+      "image": "17.webp",
+      "demos": [
+        "Intelligent Email Processing",
+        "Agent Notes"
+      ]
+    },
+    {
+      "title": "AI CV Screening Assistant Shortlists Candidates and Answers Applicant Queries Pre-Interview",
+      "description": "LLM ranks resumes on skills fit, flags diversity balance, and runs applicant Q&A chatbot—Parallels Unilever’s HireVue AI.",
+      "image_prompt": "Comic HR desk: stack of CVs flows through AI scanner, only top ones get a green tick. Chat bubble on monitor answers candidate question about store hours.",
+      "image": "18.webp",
+      "demos": [
+        "JD Matcher",
+        "JD Evaluator"
+      ]
+    },
+    {
+      "title": "Adaptive Training Content Generator Creates Personalised Learning Modules for Store Staff",
+      "description": "LLM builds micro-lessons and quizzes that adjust to each learner’s progress, boosting retention; Walmart Academies tests similar GenAI modules.",
+      "image_prompt": "Comic tablet lesson: quiz adapts difficulty meter from green to red based on answers. Employee smiles as star badges appear for progress.",
+      "image": "19.webp",
+      "demos": [
+        "Grading Assistant",
+        "Prompt Evals"
+      ]
+    },
+    {
+      "title": "Internal Knowledge Base Chatbot Delivers Instant Answers on Policies, Products, and Legal Rules",
+      "description": "RAG-powered assistant indexes manuals and SOPs, letting employees ask free-text questions; akin to Carrefour’s legal bot.",
+      "image_prompt": "Comic break room: staff asks kiosk “Return policy for cosmetics?” AI bot displays concise answer with link icons to PDF source.",
+      "image": "20.webp",
+      "demos": [
+        "Policy Search",
+        "IT Chat"
+      ]
+    },
+    {
+      "title": "Automated Narrative Reporting Bot Summarises Financial and Operational Data for Management",
+      "description": "GenAI converts dashboards into plain-language weekly briefs, highlighting anomalies—PwC trials show 80 % faster report cycles.",
+      "image_prompt": "Comic office: CFO reads a neat one-pager titled “This Week in Numbers” while complex charts collapse behind into speech bubbles.",
+      "image": "21.webp",
+      "demos": [
+        "Report Gen",
+        "Investor Relations AI"
+      ]
+    },
+    {
+      "title": "Regulatory Intelligence Monitor Alerts Teams to New Rules and Their Operational Impact",
+      "description": "AI scans government sites, flags food safety or labour law changes, and summarises action items—mirrors HSBC’s reg-tech bots.",
+      "image_prompt": "Comic radar screen with scrolling legal documents; alert siren pops over specific clause. Manager receives concise action list on tablet.",
+      "image": "22.webp",
+      "demos": [
+        "AI Contract Review Assistant",
+        "VARA rulebook"
+      ]
+    },
+    {
+      "title": "Intelligent Document Processing Extracts Data from Invoices and Purchase Orders with High Accuracy",
+      "description": "OCR + LLM captures line-items, taxes, and terms from PDFs, pushing data to ERP; Carrefour and Ahold use similar IDP stacks.",
+      "image_prompt": "Comic inbox of PDFs pulled into AI pipeline; fields auto-populate a spreadsheet, while paper stack shrinks magically.",
+      "image": "23.webp",
+      "demos": [
+        "Entity Extraction"
+      ]
+    },
+    {
+      "title": "Carbon and Energy Analytics Dashboard Tracks Store Emissions and Efficiency in Real Time",
+      "description": "AI ingests IoT and utility data to visualise energy use, predict overages, and recommend savings—Starbucks deploys comparable ESG dashboards.",
+      "image_prompt": "Comic control room: big screen shows animated bar chart of kWh dropping as lights dim. Green earth icon smiles in the corner.",
+      "image": "24.webp",
+      "demos": [
+        "Impact Report",
+        "Global O&G Reporting"
+      ]
+    },
+    {
+      "title": "Waste Reduction Optimiser Predicts Spoilage and Suggests Markdowns Before Food Expires",
+      "description": "ML analyses sell-by dates and velocity to time markdowns, cutting waste and boosting margin—Morrisons UK uses similar ‘Too Good to Go’ logic.",
+      "image_prompt": "Comic produce shelf: items glow red as AI clock counts down; employee applies yellow discount sticker just in time, while trash bin stays empty.",
+      "image": "25.webp",
+      "demos": [
+        "HypoForge"
+      ]
+    },
+    {
+      "title": "Sustainable Sourcing Insights Engine Scores Suppliers on ESG Metrics for Better Buying Decisions",
+      "description": "AI merges certification, news sentiment, and emissions data to rank suppliers, guiding ethical procurement—comparable to Carrefour’s Eco-Score project.",
+      "image_prompt": "Comic dashboard: suppliers appear on green-to-red leaderboard with leaf icons. Buyer uses magnifying glass icon to pick top-ranked vendor.",
+      "image": "26.webp",
+      "demos": [
+        "Global O&G Reporting",
+        "Deal News"
+      ]
+    }
+  ],
+  "demos": [
+    {
+      "demo": "Customer Sentiment Chatbot",
+      "description": "Summarize customer sentiment",
+      "link": "https://shellcb.straivedemo.com/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Synthetic Audience",
+      "description": "Generate synthetic audience for market research",
+      "link": "https://syntheticaudience.straivedemo.com/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Smart Cart",
+      "description": "Provide instructions to a bot to create a grocery list and add to cart",
+      "link": "https://smartcart.straivedemo.com/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Social Media Analytics",
+      "description": "Summarize customer sentiment",
+      "link": "https://sm-analytics.straivedemo.com/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Fashion AI",
+      "description": "Given a product image, generate product title, product description, meta tags, SEO optimized description",
+      "link": "https://fashionai-us.straivedemo.com/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Product Background Gen",
+      "description": "Give a model image with a studio shoot, add a background",
+      "link": "https://pdt-bg-gen.straivedemo.com/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Poster Gen",
+      "description": "Given a concept, generate an image",
+      "link": "https://gramener.com/retail-postgen/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "AI Contract Review Assistant",
+      "description": "Automates contract review, risk detection, and clause enhancement",
+      "link": "https://legal-ai-assistant.straivedemo.com/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Investor Relations AI",
+      "description": "Automates IR insights, earnings prep, and peer benchmarking",
+      "link": "https://ir-insights-main.straivedemo.com/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Competitor Price and Assortment tracking",
+      "description": "Given a product (clothing/electronics), check prices across retailers",
+      "link": "https://competitor-intelligence.straivedemo.com/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "K12 Video Analysis",
+      "description": "Personalized Learning Pathways to Nurture Every Student's Unique Potential",
+      "link": "https://k12-videoanalysis.straivedemo.com/",
+      "industry": "Education",
+      "function": ""
+    },
+    {
+      "demo": "API Agent",
+      "description": "Query APIs through natural language",
+      "link": "https://apiagent.straive.app/",
+      "industry": "",
+      "function": "IT"
+    },
+    {
+      "demo": "Decode Lab",
+      "description": "AI Assitant for creating documentation from code",
+      "link": "https://uat.gramener.com/decodelab/",
+      "industry": "Banking",
+      "function": "IT"
+    },
+    {
+      "demo": "Investment Research Synthesis",
+      "description": "Investment research copilot",
+      "link": "https://research-synthesis.straivedemo.com/",
+      "industry": "Investment Management",
+      "function": "Research and Portfolio Management"
+    },
+    {
+      "demo": "IM Sales Desk Copilot",
+      "description": "Sales copilot for investment management sales teams",
+      "link": "https://salescopilot.straivedemo.com/",
+      "industry": "Investment Management",
+      "function": "Sales"
+    },
+    {
+      "demo": "Intelligent Email Processing",
+      "description": "Messy email inbox automation",
+      "link": "https://messyinbox.straivedemo.com/",
+      "industry": "Investment Management",
+      "function": "Sales"
+    },
+    {
+      "demo": "Query Bot",
+      "description": "Automated analysis of large local CSV files using Gen AI",
+      "link": "https://pypi.org/project/querybot/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "PosterGen",
+      "description": "From Concept to Poster: Single-prompt poster generation",
+      "link": "https://postergen.straive.app/",
+      "industry": "",
+      "function": "Marketing"
+    },
+    {
+      "demo": "HypoForge",
+      "description": "Automatically generate and test hypotheses on data",
+      "link": "https://hypoforge.straive.app/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Entity Extraction",
+      "description": "Extracts structured entities from unstructured documents",
+      "link": "https://entityextraction.straive.app/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Willingness to Pay",
+      "description": "Identify customer willingness to pay from call transcripts",
+      "link": "https://willingnesstopay.straive.app/",
+      "industry": "",
+      "function": "Customer Service"
+    },
+    {
+      "demo": "Clinical Gen",
+      "description": "Generate clinical data quality and regulatory reports from data",
+      "link": "https://clinicalgen.straive.app/",
+      "industry": "Pharma and Life Sciences",
+      "function": ""
+    },
+    {
+      "demo": "Patient Pulse",
+      "description": "Automated analysis of patient calls",
+      "link": "https://patientpulse.straive.app/",
+      "industry": "Pharma and Life Sciences",
+      "function": ""
+    },
+    {
+      "demo": "DocViz",
+      "description": "",
+      "link": "https://docviz.straivedemo.com/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Critical Ratings",
+      "description": "",
+      "link": "https://ratings-critical-data.straivedemo.com/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "TILA",
+      "description": "Address discrepancies based on TILA (Truth in Lending Act) disclosures",
+      "link": "https://tila.straivedemo.com",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "PM Pal",
+      "description": "Project Management Tools: Analyze emails and monitor project communications",
+      "link": "https://gramener.com/pmpal/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "RFP Assistant",
+      "description": "AI Assistant for managing and responding to RFP",
+      "link": "https://llmfoundry.straive.com/apps/RFP-Dashboard.html",
+      "industry": "",
+      "function": "Sales"
+    },
+    {
+      "demo": "Inquiry Response",
+      "description": "Customer Inquiry Response Generator uses LLM to generate positive and empathetic responses to customer inquiries.",
+      "link": "https://gramener.com/customerresponse/",
+      "industry": "",
+      "function": "Customer Service"
+    },
+    {
+      "demo": "Agent Notes",
+      "description": "Leverage LLMs to summarize customer interactions with concise, actionable post-call documentation.",
+      "link": "https://gramener.com/agentnotes/",
+      "industry": "",
+      "function": "Customer Service"
+    },
+    {
+      "demo": "LLM Model Picker",
+      "description": "Compare and select the best AI models based on features like input/output tokens, cost, and supported data types.",
+      "link": "https://llmfoundry.straive.com/models",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Video Chat",
+      "description": "Ask questions verbally to a video knowledge base. Dynamically create a video response to a question. Train using video",
+      "link": "https://videochat.straive.app/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Student Assist",
+      "description": "Allow publishers to provide guided assistance to students by answering specific queries actionably from knowledge bases.",
+      "link": "https://gramener.com/docsearch/mhe/chat",
+      "industry": "Publishing",
+      "function": "Customer Service"
+    },
+    {
+      "demo": "Check Fraud",
+      "description": "Assess check fraud risk by applying rule-based analyses on scanned checks and highlighting high-risk transactions.",
+      "link": "https://checkfraud.straivedemo.com/",
+      "industry": "Financial services",
+      "function": ""
+    },
+    {
+      "demo": "Automated Reconciliation Tool",
+      "description": "Automates transaction and account reconciliation processes",
+      "link": "https://reconcileai.straivedemo.com/",
+      "industry": "Investment Management",
+      "function": "Analytics"
+    },
+    {
+      "demo": "Adverse Event Monitoring",
+      "description": "Tracks significant risk events affecting portfolios",
+      "link": "https://gramener.com/adverseevents/",
+      "industry": "Investment Management",
+      "function": ""
+    },
+    {
+      "demo": "Adverse Events",
+      "description": "Use multi-agent workflows to accurately identify if a patient feedback is an adverse event",
+      "link": "https://adverseevents.straive.app/",
+      "industry": "Pharma and Life Sciences",
+      "function": ""
+    },
+    {
+      "demo": "LLM Foundry Flow",
+      "description": "Explore the real-time usage of LLM Foundry animating each request users in Straive make",
+      "link": "https://llmfoundry.straive.com/logflow",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "LLM Foundry Adoption",
+      "description": "Explore the real-time adoption of LLM Foundry within each team in Straive visually",
+      "link": "https://llmfoundry.straive.com/adoption",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "LLM Foundry Speak",
+      "description": "Convert text into speech by selecting a model, voice type, and audio format to generate high-quality audio files.",
+      "link": "https://llmfoundry.straive.com/speak",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "LLM Dialog",
+      "description": "Allow LLMs to talk to each other, creating new body of knowledge",
+      "link": "https://llmdialog.straive.app/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Clinical Trials API Agent",
+      "description": "Answer questions from relevant clinical trials from ClinicalTrials.gov using LLMs",
+      "link": "https://clinicaltrialsapi.straive.app/",
+      "industry": "Pharma and Life Sciences",
+      "function": ""
+    },
+    {
+      "demo": "JD Matcher",
+      "description": "Analyze candidate resumes against a job description using LLMs to find the best matches",
+      "link": "https://jd.straive.app/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Incidents Analysis",
+      "description": "Identify the main drivers of IT incidents among trading applications. Analyze and recommend actions using LLMs",
+      "link": "https://incidents.straive.app/",
+      "industry": "Financial services",
+      "function": ""
+    },
+    {
+      "demo": "LinkedIn Summary",
+      "description": "Generate personalized insights from LinkedIn profiles to help sales & marketing teams prepare for meetings",
+      "link": "https://gramener.com/linkedinsummary/",
+      "industry": "",
+      "function": "Marketing"
+    },
+    {
+      "demo": "PDF Summary",
+      "description": "Summarize and create an abstract for a PDF chapter from a book",
+      "link": "https://pdfsummary.straive.app/",
+      "industry": "Publishing",
+      "function": ""
+    },
+    {
+      "demo": "Report Gen",
+      "description": "Automatically generate reports from data using templates and summarize with Gen AI",
+      "link": "https://reportgen.straive.app/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Prompt Evals",
+      "description": "Evaluate the quality of prompts and models. Use LLMs to improve their quality systematically",
+      "link": "https://promptevals.straive.app/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "LLM Personality",
+      "description": "What personality traits to different LLMs exhibit? Explore the psychology of LLMs using the Big 5 test",
+      "link": "https://llmpersonality.straive.app/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Hip Surgery Videos",
+      "description": "Search and answer questions from videos of hip surgery using the visuals, despite lack of audio",
+      "link": "https://gramener.com/docsearch/hipreplacement/",
+      "industry": "Pharma and Life Sciences",
+      "function": ""
+    },
+    {
+      "demo": "Image Extract",
+      "description": "Extract structured information from images across industries using LLMs",
+      "link": "https://imageextract.straive.app/",
+      "industry": "Financial services",
+      "function": ""
+    },
+    {
+      "demo": "Deal News",
+      "description": "Extract deal news (investor, company, deal size, PE/VC, etc.) from major deal news sites",
+      "link": "https://dealnews.straive.app/",
+      "industry": "Financial services",
+      "function": ""
+    },
+    {
+      "demo": "Network Explorer",
+      "description": "A visual interface for knowledge graphs. Upload your CSV to see a knowledge graph",
+      "link": "https://network.straive.app/",
+      "industry": "",
+      "function": "IT"
+    },
+    {
+      "demo": "WhatsLLM",
+      "description": "A WhatsApp bot that can answer author questions about manuscript status (or anything else)",
+      "link": "https://wa.me/+6586452570",
+      "industry": "Publishing",
+      "function": "IT"
+    },
+    {
+      "demo": "Status Assist",
+      "description": "Status checks are ~25% of publishing support requests. This automates email replies to status checks.",
+      "link": "https://paperstatus.straive.app/",
+      "industry": "Publishing",
+      "function": "IT"
+    },
+    {
+      "demo": "IT Chat",
+      "description": "Finding the status of your IT service request via a Google Chat message (or Teams, WhatsApp, etc.)",
+      "link": "https://itchat.straive.app/",
+      "industry": "",
+      "function": "IT"
+    },
+    {
+      "demo": "DataChat v2",
+      "description": "Talk to your dataset - directly in the browser. It converts text to SQL and explains the answer.",
+      "link": "https://datachat.straive.app/",
+      "industry": "",
+      "function": "IT"
+    },
+    {
+      "demo": "Contract Redlining",
+      "description": "Analyze documents for errors and redline them for edits (like track changes in Word)",
+      "link": "https://gramener.com/contractredlining/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "aiKira Collab",
+      "description": "Implement a comprehensive email management system to streamline communication, track client requests, and identify risk emails in the absence of a project manager",
+      "link": "https://aikira.straive.com/",
+      "industry": "Publishing",
+      "function": "Customer Service"
+    },
+    {
+      "demo": "Alt Text",
+      "description": "Generate Alt Text from images for accessibility",
+      "link": "https://space.straive.com/uploadFileForAltTextV2/gramener",
+      "industry": "Publishing",
+      "function": "Operations"
+    },
+    {
+      "demo": "Chat Assist",
+      "description": "Real-time assistants for customer support that summarizes, audits and suggests responses",
+      "link": "https://gramener.com/chatassist/",
+      "industry": "",
+      "function": "Operations"
+    },
+    {
+      "demo": "Video Search",
+      "description": "Search videos with plain text. Videos were segmented at keyframes and described along with the objects.",
+      "link": "https://gramener.com/docsearch/videosearch/",
+      "industry": "Media",
+      "function": ""
+    },
+    {
+      "demo": "Grading Assistant",
+      "description": "Automatically evaluate subjective answers based on a grading guide with feedback",
+      "link": "https://gramener.com/gradingassist/",
+      "industry": "Education",
+      "function": "Operations"
+    },
+    {
+      "demo": "Call Emotion",
+      "description": "Identify the emotion expressed by customers during a call and respond appropriately",
+      "link": "https://gramener.com/callemotion/",
+      "industry": "",
+      "function": "Support"
+    },
+    {
+      "demo": "Work Interactions",
+      "description": "Explore which teams interact the most and least and plan facilities accordingly",
+      "link": "https://workinteractions.straive.app/",
+      "industry": "",
+      "function": "HR"
+    },
+    {
+      "demo": "Complaints Closure",
+      "description": "Generate closure letters for customer service complaints",
+      "link": "https://closurelettergen.azurewebsites.net/",
+      "industry": "Pharma and Life Sciences",
+      "function": "Operations"
+    },
+    {
+      "demo": "Novasense",
+      "description": "Code-first agent framework for seamlessly planning and executing data analytics tasks",
+      "link": "https://novasense.azurewebsites.net/",
+      "industry": "Pharma and Life Sciences",
+      "function": "Operations"
+    },
+    {
+      "demo": "Synthetic data",
+      "description": "Generate synthetic data for use in anonymization in clinical trials",
+      "link": "https://syntheticdatagenerate.azurewebsites.net/",
+      "industry": "Pharma and Life Sciences",
+      "function": "Operations"
+    },
+    {
+      "demo": "JD Evaluator",
+      "description": "Evaluate a job description based on clarity of role, attractiveness, diversity, etc.",
+      "link": "https://contentevaluation.azurewebsites.net/",
+      "industry": "Pharma and Life Sciences",
+      "function": "HR"
+    },
+    {
+      "demo": "Image Explore",
+      "description": "Classify images and cluster them by similarity at low cost using image embeddings",
+      "link": "https://imageexplore.straive.app/",
+      "industry": "",
+      "function": "Operations"
+    },
+    {
+      "demo": "Voice Transcripts",
+      "description": "Transcribe and summarize customer service calls to find unresolved issues and audit quality",
+      "link": "https://voicetranscripts.straive.app/",
+      "industry": "",
+      "function": "Support"
+    },
+    {
+      "demo": "Contract Analysis",
+      "description": "Explore what terms are present (or absent) in any contract, reducing risks",
+      "link": "https://contractanalysis.straive.app/",
+      "industry": "Publishing",
+      "function": "Operations"
+    },
+    {
+      "demo": "Spreadsheet LLM",
+      "description": "Bring the power of LLMs to spreadsheets. Drag & drop AI-powered formulas",
+      "link": "https://llmfoundry.straive.com/googlesheets",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "LLM Pricing",
+      "description": "Which LLMs are the best value for money? Explore the best and worst by cost and quality",
+      "link": "https://llmpricing.straive.app/",
+      "industry": "",
+      "function": "IT"
+    },
+    {
+      "demo": "Video Highlights",
+      "description": "Personalize video and podcast transcripts to financial advisors using their portfolio and interests",
+      "link": "https://videohighlights.straive.app/",
+      "industry": "Financial services, Investment Management",
+      "function": "Marketing"
+    },
+    {
+      "demo": "Policy Search",
+      "description": "Ask questions about Learningmate's HR, IT or admin policies. Get answers with references",
+      "link": "https://gramener.com/docsearch/learningmatepolicies/",
+      "industry": "",
+      "function": "HR"
+    },
+    {
+      "demo": "LLM Classifier",
+      "description": "Categorize documents into topics cheaply using embeddings",
+      "link": "https://llmfoundry.straive.com/classify",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "LLM Favorite Numbers",
+      "description": "Discover the biases in LLMs by asking them to guess a random number. 42 is very popular!",
+      "link": "https://llmrandom.straive.app/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Image Similarities",
+      "description": "Explore driver profile photos and their similarity using image embeddings",
+      "link": "https://gramener.com/driverprofile/similar.html",
+      "industry": "Logistics and Supply Chain",
+      "function": "Operations"
+    },
+    {
+      "demo": "Biomolecule Papers",
+      "description": "Answer questions based on each and every one of the 5,000 biomolecule paper abstracts on Arxiv. [Also on DocExplore](https://gramener.com/docexplore/biomolecule-papers/)",
+      "link": "https://gramener.com/docsearch/biomoleculepapers/",
+      "industry": "Publishing",
+      "function": "Research"
+    },
+    {
+      "demo": "Credit Card Complaints",
+      "description": "Search over 4,000 consumer complaints about credit cards in Q1 2024 to understand the most common issues and resolutions. [Also on DocExplore](https://gramener.com/docexplore/credit-card-complaints/)",
+      "link": "https://gramener.com/docsearch/creditcardcomplaints/",
+      "industry": "Financial services",
+      "function": "Support"
+    },
+    {
+      "demo": "Global O&G Reporting",
+      "description": "Explore the sustainability themes covered by oil & gas companies like BP, CNPC, ExxonMobil, Shell, etc.",
+      "link": "https://gramener.com/docexplore/sustainability-energy/",
+      "industry": "Energy",
+      "function": "ESG"
+    },
+    {
+      "demo": "Visualize Hallucinations",
+      "description": "Understand how LLMs work and learn how to detect hallucinations automatically",
+      "link": "https://llmviz.straive.app/",
+      "industry": "",
+      "function": "IT"
+    },
+    {
+      "demo": "Driver Profile ID",
+      "description": "Identify whether a driver's photo meets the defined criteria or not",
+      "link": "https://gramener.com/driverprofile/",
+      "industry": "Logistics and Supply Chain",
+      "function": "Operations"
+    },
+    {
+      "demo": "10K Filings Chat",
+      "description": "Chat with the 10K filings of Amazon, Apple, Cisco, Dell, Google, IBM, Intel, Microsoft, NVIDIA, and Tesla.",
+      "link": "https://gramener.com/docchat/10kfilings/",
+      "industry": "Financial services",
+      "function": ""
+    },
+    {
+      "demo": "Insider Intelligence",
+      "description": "DocSearch: Use Gen AI to improve quality of search and summarization across 7,000 published articles.",
+      "link": "https://gramener.com/docsearch/insiderintelligence/",
+      "industry": "Publishing",
+      "function": "Marketing"
+    },
+    {
+      "demo": "Gen AI Maturity",
+      "description": "Answer 15 questions. Benchmarks your Gen AI adoption with peers. Discover areas to focus.",
+      "link": "https://gramener.com/genaimaturity/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "Responsible AI Proxy",
+      "description": "Allow developers to securely access any LLM via a single proxy and audit usage",
+      "link": "https://gramener.com/llmproxy/",
+      "industry": "",
+      "function": "IT"
+    },
+    {
+      "demo": "Research Integrity",
+      "description": "Uncover paper-mill articles. Improve research quality. Reduce risk from fraudulent authors.",
+      "link": "https://researcherintegrity.straive.app/",
+      "industry": "Publishing",
+      "function": ""
+    },
+    {
+      "demo": "CRM Messages",
+      "description": "Explore the open CRM cases on SalesForce and identify the main topics of discussion.",
+      "link": "https://gramener.com/docexplore/salesforce-crm/",
+      "industry": "",
+      "function": "Marketing"
+    },
+    {
+      "demo": "VARA rulebook",
+      "description": "Technology and Information Rulebook of the Dubai Virtual Assets and Related Activities Regulations 2023 (VARA)",
+      "link": "https://gramener.com/docexplore/vara/",
+      "industry": "Government",
+      "function": ""
+    },
+    {
+      "demo": "LLM Excel",
+      "description": "An Excel formula, LLM(), that talks to ChatGPT and you can drag across cells",
+      "link": "https://gramener.com/llmexcel/",
+      "industry": "",
+      "function": ""
+    },
+    {
+      "demo": "VoiceLLM",
+      "description": "Talk to ChatGPT. Proves our ability to recognize speech in real-time and reply with speech.",
+      "link": "https://gramener.com/voicellm/",
+      "industry": "",
+      "function": "Support"
+    },
+    {
+      "demo": "Impact Report",
+      "description": "Explores Rivian's first Impact Report covering initiatives and accomplishments in 2022.",
+      "link": "https://gramener.com/docexplore/impact-report/",
+      "industry": "",
+      "function": "ESG"
+    },
+    {
+      "demo": "HR Data Chat",
+      "description": "A conversational BI interface with HR data (FTEs, Hiring, Termination).",
+      "link": "https://gramener.com/datachat/@hr/",
+      "industry": "",
+      "function": "HR"
+    },
+    {
+      "demo": "Website messages",
+      "description": "An analysis of the messages received at a waste management company's website.",
+      "link": "https://gramener.com/docexplore/waste-management/",
+      "industry": "",
+      "function": "Marketing"
+    },
+    {
+      "demo": "Straive ENPS",
+      "description": "Feedback from Straive employee survey on what's positive and what can be improved.",
+      "link": "https://gramener.com/docexplore/straive-enps/",
+      "industry": "",
+      "function": "HR"
+    },
+    {
+      "demo": "Publisher feedback",
+      "description": "Suggestions from customers to publisher on what corrective and preventive action is required",
+      "link": "https://gramener.com/docexplore/publisher-feedback/",
+      "industry": "Publishing",
+      "function": ""
+    },
+    {
+      "demo": "LLM Foundry",
+      "description": "Enable LLM adoption securely and at low cast using an LLM Proxy to all AI providers",
+      "link": "https://llmfoundry.straive.com/",
+      "industry": "",
+      "function": "IT"
+    },
+    {
+      "demo": "G20",
+      "description": "Explore the topics discussed in the G20 2023 summit and what BMGF goals they addressed.",
+      "link": "https://gramener.com/docexplore/g20/",
+      "industry": "Government",
+      "function": ""
+    },
+    {
+      "demo": "Topic Analysis",
+      "description": "Analyze Amazon reviews of Quaker Oats to see what customers like / dislike",
+      "link": "https://gramener.com/topicanalysis/",
+      "industry": "Retail & CPG",
+      "function": "Marketing"
+    },
+    {
+      "demo": "GPAI Abstracts",
+      "description": "Explore the abstracts submitted to the GPAI Summit 2023 Research Symposium, and which AI topics they addressed the most",
+      "link": "https://gramener.com/docexplore/gpai-abstracts/",
+      "industry": "Publishing",
+      "function": ""
+    }
+  ]
+}

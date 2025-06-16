@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail AI Chat</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.1/marked.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .chat-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .chat-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .chat-title {
+            font-size: 4rem;
+            font-weight: 800;
+            color: white;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        
+        .chat-subtitle {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .chat-messages {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            overflow-y: auto;
+            min-height: 400px;
+        }
+        
+        .message {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 15px;
+            font-size: 1.25rem;
+            line-height: 1.6;
+        }
+        
+        .user-message {
+            background: #e0f2fe;
+            margin-left: 80px;
+            border-left: 4px solid #0288d1;
+        }
+        
+        .ai-message {
+            background: #f3e5f5;
+            margin-right: 80px;
+            border-left: 4px solid #7b1fa2;
+        }
+        
+        .input-container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-end;
+        }
+        
+        .input-wrapper {
+            flex: 1;
+            position: relative;
+        }
+        
+        .chat-input {
+            width: 100%;
+            min-height: 120px;
+            padding: 20px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.95);
+            resize: vertical;
+            outline: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .chat-input:focus {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        }
+        
+        .button {
+            padding: 20px 30px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .send-button {
+            background: #4caf50;
+            color: white;
+        }
+        
+        .send-button:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+        
+        .send-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .voice-button {
+            background: #2196f3;
+            color: white;
+            min-width: 120px;
+        }
+        
+        .voice-button:hover {
+            background: #1976d2;
+            transform: translateY(-2px);
+        }
+        
+        .voice-button.listening {
+            background: #f44336;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .thinking {
+            display: none;
+            color: #666;
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+        
+        .thinking.show {
+            display: block;
+        }
+        
+        .watermark {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.3);
+            font-weight: 300;
+        }
+        
+        /* Markdown styling */
+        .ai-message h1, .ai-message h2, .ai-message h3 {
+            font-weight: bold;
+            margin: 15px 0 10px 0;
+        }
+        
+        .ai-message h1 { font-size: 1.4rem; }
+        .ai-message h2 { font-size: 1.3rem; }
+        .ai-message h3 { font-size: 1.25rem; }
+        
+        .ai-message ul, .ai-message ol {
+            margin: 10px 0;
+            padding-left: 30px;
+        }
+        
+        .ai-message li {
+            margin: 5px 0;
+        }
+        
+        .ai-message code {
+            background: rgba(0,0,0,0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Consolas', monospace;
+        }
+        
+        .ai-message pre {
+            background: rgba(0,0,0,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        
+        .ai-message strong {
+            font-weight: 700;
+        }
+        
+        .ai-message a {
+            color: #1976d2;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        
+        .ai-message a:hover {
+            color: #0d47a1;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1 class="chat-title">Retail AI Assistant</h1>
+            <p class="chat-subtitle">Ask me anything about retail AI use cases and solutions</p>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages">
+            <div class="message ai-message">
+                <strong>👋 Welcome!</strong> I'm your Retail AI assistant. I can help you learn about various AI applications in retail. You can type your question below or use the voice button to speak your question.
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <div class="input-wrapper">
+                <textarea 
+                    id="chat-input" 
+                    class="chat-input" 
+                    placeholder="Type your question about retail AI here..."
+                    rows="3"
+                ></textarea>
+                <div class="thinking" id="thinking">🤔 Thinking...</div>
+            </div>
+            <button id="voice-button" class="button voice-button">🎤 Voice</button>
+            <button id="send-button" class="button send-button">Send</button>
+        </div>
+    </div>
+    
+    <div class="watermark">Retail AI Assistant</div>
+    
+    <script type="module" src="chat.js"></script>
+</body>
+</html>
