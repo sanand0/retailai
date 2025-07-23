@@ -145,3 +145,55 @@ This worked quite well. I only needed to make tweaks thereafter, like:
 ---
 
 That's it!
+
+# Industrial AI Use Cases
+
+I had a [prior chat](https://chatgpt.com/share/68804469-97e8-800c-b409-9305899bbbd8) about an AWS Industrial AI event, to which I added:
+
+> In the context of these talks, research clients likely to visit this event and the kinds of problems they'll face. Research how LLMs are used in and are likely to transform the manufacturing and supply chain industry. Synthesize these into a comprehensive set of recommendations on use cases and initiatives that the clients will benefit from. Use what you know about me and Straive and previous conversations to see which demos we have created would align with these.
+>
+> Finally, generate a set of slides in the same structure, format, and style as this slides.json. Aim for about 12-20 slides.
+>
+> ```json
+> {
+>   "slides": [
+>     {
+>       "title": "Chat-Commerce Assistant in yuu App Answers Questions and Builds Personalised Bundles",
+>       "description": "LLM chatbot inside the yuu app lets shoppers type or speak queries like “Where’s oat-milk?” and instantly returns shelf location, bundle offers, and promo explanations—boosting conversion and basket size. Walmart’s ‘Text to Shop’ is a comparable example.",
+>       "image_prompt": "Comic-style split scene: left panel shows a shopper holding a phone with the yuu app, speech bubble: “Where’s oat-milk?”; right panel shows the screen with a smiling AI avatar, aisle map, and highlighted breakfast bundle. Use bright arrows linking query to answer to emphasise instant AI help and upsell.",
+>       "image": "0.webp",
+>       "demos": [
+>         "Smart Cart",
+>         "API Agent",
+>         "WhatsLLM"
+>       ]
+>     },
+>     {
+>       "title": "Receipt-to-Recipe Cross-Sell Engine Suggests Meals and Add-On Items After a Scan",
+>       "description": "Customer scans a Giant receipt; an LLM proposes recipes and recommends Guardian vitamins or Cold Storage extras, nudging cross-banner sales—similar to Carrefour’s Cookit scan-to-cook feature.",
+>       "image_prompt": "Vibrant comic frame: shopper points phone camera at a crumpled receipt; the screen pops up a colourful recipe card with extra ingredient icons and add-to-cart buttons. A lightbulb icon above the shopper shows new meal ideas.",
+>       "image": "1.webp",
+>       "demos": [
+>         "Smart Cart",
+>         "API Agent"
+>       ]
+>     },
+>     ...
+>   ],
+> }
+> ```json
+>
+> Pick the demos from the most relevant demo's .name in this DEMOS list -- ensuring that the name EXACTLY matches.
+>
+> <DEMOS>
+>   [
+>     {
+>       "demo": "Customer Sentiment Chatbot",
+>       "description": "Summarize customer sentiment",
+>       "link": "https://shellcb.straivedemo.com/",
+>       "industry": "",
+>       "function": ""
+>     },
+>     ... (I passed the full demos.json)
+>   ]
+> </DEMOS>

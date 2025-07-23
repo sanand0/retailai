@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrial AI Slideshow</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <div class="slide-container">
+    <div class="slides-wrapper" id="slides-wrapper">
+      <!-- Slides will be dynamically inserted here -->
+    </div>
+  </div>
+
+  <div class="autoplay-indicator paused" id="autoplay-indicator" onclick="toggleAutoPlay()">⏸️</div>
+  <div class="watermark">Industrial AI use cases</div>
+  <div class="navigation-hint">Use ← → arrow keys, SPACE to advance, P to toggle auto-play</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script type="module" src="../script.js"></script>
+</body>
+
+</html>
